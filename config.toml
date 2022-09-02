@@ -1,0 +1,62 @@
+
+title = "Sequoia service configuration"
+
+[owner]
+name = "Komal Patel"
+organization = "Tiniyo"
+bio = "Founder"
+
+[server]
+port = ":9092"
+queuelen = 0
+errorqueuelen = 10000
+ginmode = "debug"
+
+[logging]
+facility = "local1"
+level = "debug"
+tag = "NeoMs"
+syslog = "127.0.0.1:514"
+
+[fs]
+fshost = "101.35.42.254"
+fsport = "8021"
+fspassword = "ClueCon"
+fstimeout = 10
+
+[heartbeat]
+baseurl = "<HEARTBEAT_SERVICE>"
+username = "<PRIV_USER>"
+secret = "<PRIV_SECRET>"
+
+[rating]
+baseurl = "<RATE_ROUTE_SERVICE>"
+username = "<PRIV_USER>"
+secret = "<PRIV_SECRET>"
+region = "<REGION>"
+
+[numbers]
+baseurl = "<NUMBER_SERVICE>"
+username = "<PRIV_USER>"
+secret = "<PRIV_SECRET>"
+
+[sipendpoint]
+baseurl = "<SIP_SERVICE>"
+username = "<PRIV_USER>"
+secret = "<PRIV_SECRET>"
+
+[kamgo]
+baseurl = "<KAMGO_SERVICE>"
+username = "<PRIV_USER>"
+secret = "<PRIV_SECRET>"
+
+[redis]
+redishost = "101.35.42.254"
+redisport = "6379"
+redispassword = ""
+redisdb = 0
+
+[recordingservice]
+baseurl = "<RECORDING_SERVICE>"
+username = "<PRIV_USER>"
+secret = "<PRIV_SECRET>"
