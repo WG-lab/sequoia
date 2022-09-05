@@ -85,6 +85,7 @@ type Freeswitch struct {
 	FsTimeout  int
 }
 
+//存储Redis信息
 type Redis struct {
 	RedisHost     string
 	RedisPort     string

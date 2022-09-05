@@ -17,7 +17,7 @@ type CallController struct {
 func (u *CallController) InitializeCallController() {
 	u.callManage = new(managers.CallManager)
 	u.callManage = managers.NewCallManager()
-	// new(callstats.CallStatManager).InitCallStatManager()
+	//new(callstats.CallStatManager).InitCallStatManager()
 }
 
 /*
